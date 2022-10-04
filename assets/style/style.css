@@ -1,0 +1,376 @@
+.header {
+    height: 100%;
+    width: 100%;
+}
+
+.headerWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+
+    padding: 15px 0;
+}
+
+.headerMain {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+
+    width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+    .headerMain {
+        flex-wrap: wrap;
+    }
+}
+
+.logo {
+    max-width: 210px;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.logoImg {
+    max-width: 210px;
+    width: 100%;
+}
+
+.logoTitle {
+    font-family: "HeliosCond-Bold";
+    font-size: var(--SizeText__LogoName);
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+
+    color: var(--Color__Black);
+}
+
+.headerMain--content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 19px;
+
+    width: 100%;
+}
+
+.headerMain--content__Inner {
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--Color__HR);
+
+    gap: 15px;
+}
+
+@media screen and (max-width: 440px) {
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menuItem {
+    padding: 5px 7px;
+}
+
+.menuItem--text {
+    font-size: var(--SizeText__NavMenu);
+    line-height: normal;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+
+    cursor: pointer;
+}
+
+.userAccount {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 14px;
+}
+
+.userAccountItem--btn {
+    font-size: var(--SizeText__NavMenu);
+    line-height: normal;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+
+    cursor: pointer;
+}
+
+.headerMain--content__mainInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    width: 100%;
+
+    flex-wrap: wrap;
+}
+
+.banerSlider {
+    max-width: 253px;
+    width: 100%;
+    height: 70px;
+}
+
+.baner {
+    width: 100%;
+    height: 100%;
+    background-image: url(../image/banner/banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+@media screen and (max-width: 410px) {
+    .cart {
+        gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+.cartInfoUserPay {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    gap: 10px;
+}
+
+.cartInfoUserPayItem {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 10px;
+    width: 100%;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+}
+
+.cartInfoUserPayItem--icon {
+    width: 19px;
+    height: 18px;
+}
+
+.cartInfoUserPayItem--text {
+    font-size: var(--SizeText__MainText);
+    line-height: normal;
+    letter-spacing: -0.01em;
+
+    text-decoration: underline;
+}
+
+.basket--text {
+    font-size: var(--SizeText__BasketText);
+}
+
+.cartInfoBasketPay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+    flex-wrap: wrap;
+
+    max-width: 250px;
+}
+
+.cartInfoBasketPayItem {
+    width: 70px;
+    height: 70px;
+
+    border: 1px solid var(--Color__Border);
+}
+
+.cartInfoBasketPayItem>img {
+    width: 100%;
+    height: 100%;
+}
+
+.operatingMode {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    gap: 15px;
+}
+
+.operatingMode--time {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.operatingMode--time>p {
+    font-family: "Robot__Bold";
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+.operatingMode--time>span {
+    letter-spacing: -0.025em;
+}
+
+.operatingMode--tel {
+    font-family: "Robot__Bold";
+    font-size: var(--SizeText__TelText);
+    line-height: normal;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--Color__Main);
+}
+
+.operatingMode--city {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4px;
+
+    width: 100%;
+}
+
+.operatingMode--city__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+
+    border-top: 1px solid var(--Color__HR);
+}
+
+.operatingMode--city__content>span {
+    letter-spacing: -0.01em;
+    color: var(--Color__Main);
+}
+
+.changeCity {
+    border-bottom-style: dotted;
+
+    position: relative;
+}
+
+.changeCity::before {
+    content: "►";
+
+    position: absolute;
+    top: 3px;
+    left: -14px;
+
+    font-size: 10px;
+}
+
+.headerSearchPanel {
+    width: 100%;
+
+    display: none;
+}
+
+.headerSearchPanelWrapper {
+    width: 100%;
+
+    background: var(--Color__BGBlock);
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 34px;
+}
+
+.searchBtn {
+    border-radius: 12px 0 0 12px;
+    padding: 4px;
+
+    background: var(--Color__Active);
+    height: 100%;
+}
+
+.searchBtn>span {
+    max-width: 24px;
+    max-height: 24px;
+}
+
+.productList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+}
+
+.productItem {}
+
+.productItem--link {
+    line-height: normal;
+
+    color: var(--Color__White);
+    padding: 8.6px 19px;
+
+    font-family: "Robot__Bold";
+    font-size: var(--SizeText__ButtonText);
+    font-weight: 600;
+    line-height: normal;
+}
+
+.active {
+    background: var(--Color__Active);
+    color: var(--Color__Black);
+}
+
+.saleBtn {
+    color: var(--Color__Black);
+    background: var(--Color__Active);
+    border-radius: 0 12px 12px 0;
+
+    height: 100%;
+
+    text-transform: uppercase;
+
+    font-family: "Robot__Bold";
+    font-size: var(--SizeText__ButtonText);
+    font-weight: 600;
+    line-height: normal;
+
+    padding: 8.6px 19px;
+}

@@ -368,13 +368,12 @@ body {
     padding: 0 15px;
 }
 
-
 :root {
     /* Text Styles */
     --SizeText__TelText: 25px;
     --SizeText__BasketText: 14px;
-    --SizeText__LogoName: 14px;
     --SizeText__ButtonText: 14px;
+    --SizeText__LogoName: 13px;
     --SizeText__MainText: 12px;
     --SizeText__NavMenu: 12px;
 
@@ -386,4 +385,5 @@ body {
     --Color__Main: #252525;
     --Color__Border: #D9D9D9;
     --Color__HR: #D7D7D7;
+    --Color__Active: #FFCC00;
 }
